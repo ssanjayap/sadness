@@ -1,0 +1,83 @@
+<HTML>
+
+<head>
+   <title>Homepage</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>available books</title>
+   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<BODY>
+   <div class="container-fluid">
+
+      <div class="row" style="height: 4%" opacity="50%">
+
+         <!-- <form>
+                    <input id="search" type="text" name="search" placeholder="Search..">
+            </form> -->
+
+      </div>
+      
+
+      <div class="row" style="height: 92%">
+         <div class="col-md-4">
+               <h3> Book entry form :</h3>
+
+               <form method="post" action="add.php">
+                  <table>
+                     <tr>
+                        <td><h6>Name:</h6></td>
+                        <!-- This value above is required and must be filled -->
+                        <td><input type="text" name="name" required placeholder="Ente the Name of Book"></td>
+                     </tr>
+            
+                     <tr>
+                        <td><h6>Author:</h6></td>
+                        <!-- The email is requird value and must be filled -->
+                        <td><input type="text" name="author" required placeholder="Author" </td> </tr> <tr>
+                        <td><h6>Year:</h6></td>
+                        <td><input type="number" min="1190" name="year" required placeholder="Year"></td>
+                     </tr>
+                     <tr>
+                        <td><h6>Image:</h6></td>
+                        <td><input type="file" name="image" placeholder="image"></td>
+                     </tr>
+            
+                     <td><h6>Price:</h6></td>
+                     <td><input type="number" name="price" required placeholder="Price"></td>
+                     </tr>
+            
+                     <tr>
+                        <td>
+                           <input type="submit" name="submit" value="Submit" id="btn">
+                        </td>
+                     </tr>
+                  </table>
+               </form>
+         </div>
+         <div class="col-md-4">
+           <h4> Delete Books</h4>
+               <form action="delete.php" method="POST">
+                     <label for="bookname">Enter The Name of the book</label><br>
+                  <input type="text" required placeholder="Book Name" name="bookname"><br><br>
+                  <input type="submit" value="Delete" name="delete" id="btn">
+               </form>
+         </div>
+            <div class="col-ms-4">
+               <iframe href="index.php" class="iframe"></iframe>
+            </div>
+      </div>
+      <!-- <iframe src="cards.html" height="100%" width="100%"></iframe> -->
+   </div>
+   </div>
+   </div>
+
+
+</BODY>
+
+</HTML>
